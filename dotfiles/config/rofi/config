@@ -1,0 +1,9 @@
+rofi.terminal:        alacritty
+rofi.sidebar-mode:    true
+rofi.theme:           sidetab-white.rasi
+rofi.drun-icon-theme: Papirus
+rofi.show-icons:      true
+rofi.click-to-exit:   true
+rofi.me-select-entry: MouseSecondary
+rofi.me-accept-entry: MousePrimary
+

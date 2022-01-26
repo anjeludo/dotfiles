@@ -1,0 +1,42 @@
+config:
+  backup: true
+  create: true
+  dotpath: dotfiles
+dotfiles:
+  f_zshrc:
+    src: zshrc
+    dst: ~/.zshrc
+    chmod: '644'
+  f_alacritty.yml:
+    src: config/alacritty/alacritty.yml
+    dst: ~/.config/alacritty/alacritty.yml
+  f_profile:
+    src: profile
+    dst: ~/.profile
+    chmod: '644'
+  d_rofi:
+    src: config/rofi
+    dst: ~/.config/rofi
+  f_gitconfig:
+    src: gitconfig
+    dst: ~/.gitconfig
+  f_hyper.js:
+    src: hyper.js
+    dst: ~/.hyper.js
+  f_settings.json:
+    src: config/Code/User/settings.json
+    dst: ~/.config/Code/User/settings.json
+  d_scripts:
+    src: scripts
+    dst: ~/scripts
+profiles:
+  angel-linux:
+    dotfiles:
+    - f_zshrc
+    - f_alacritty.yml
+    - f_profile
+    - d_rofi
+    - f_gitconfig
+    - f_hyper.js
+    - f_settings.json
+    - d_scripts
